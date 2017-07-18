@@ -1,0 +1,135 @@
+﻿body{
+    font-family: Helvetica;
+    font-size: 22px;
+    color: seashell;
+    background-color: black;
+    opacity: 0.9;
+    margin: 0;
+}
+.container{
+    display: flex;
+    justify-content: center;
+}
+#header{
+    width: 100%;
+    height:69px;
+    border-bottom: 1px solid seashell;
+    display: flex;
+    justify-content: space-between; /*ensures space between the logo and the links*/
+    align-items: center;
+    position: fixed; 
+    background-color: black;
+    z-index: 1;
+}
+#logoimg{
+    /*tea cozy logo*/
+    height: 50px;
+    width: auto;
+    padding-left: 10px;   
+}
+#links{
+    list-style:none;
+    display: inline-block;
+    justify-content: center;
+    align-items: center;
+}
+#links li{
+    display: inline-block;
+    text-decoration: underline; /*using the anchor <a> tag has the underline required so not sure how neccessary it is to remove the underlining and reinstate it*/ 
+    padding-right: 20px;
+}
+#links li a{
+    text-decoration:none;
+    color: seashell;
+}
+#mission{
+    display: flex;
+    flex-direction: row;
+    background-image: url("Images/img-mission-background.jpg");
+    height: 700px;
+    /*background-repeat: no-repeat;*/
+    flex-basis: 1200px; /*The width*/
+}
+
+#month{
+    /*container propertys for tea of the month*/
+    display: flex;
+    flex-direction: row;
+    flex-basis: 1000px;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding-top: 70px;
+}
+#month img{
+    height: 200px; /*Fixed sized images*/
+    width: 300px;
+}
+#mission #image-text{
+    height: auto;
+    width: 100%;
+    align-self: center; /*Centering the text in the container*/
+    text-align: center;
+    background-color: black;
+}
+.image-container{
+    display: flex;
+    flex-direction: column;
+    /*Text appears under the image due to the direction*/
+    text-align: center;
+    margin-right: 20px;
+}
+.image-container h4{
+    margin: 10px 0; 
+}
+.headline-container{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+#address{
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+}
+#copyright{
+    text-align: left;
+    margin-left: 20px;
+    /*display: flex; /*testing aligning of text using flex box*/
+    /*flex-direction: row;
+    align-content: flex-start;*/
+}
+#locations-box{
+    background-image: url("Images/img-locations-background.jpg");
+    width: 1200px;
+    height: 500px;
+    padding-top: 70px;
+    padding-bottom:70px;
+}
+#locations-box h2{
+    text-align: center;
+    margin: 0; /*These are set usingthe element below*/
+    padding: 0;
+}
+
+.locations{
+    display: flex;
+    flex-direction: column;
+    height: 250px;
+    width: 300px;
+    text-align: center;
+    line-height: 200%;
+    opacity: 1;
+    background-color: black;
+    align-self: center;
+    margin: 15px 20px;
+}
+
+p{
+    /*Clearing the default margin values*/
+    margin: 0;
+}
+
